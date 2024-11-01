@@ -1,0 +1,146 @@
+.Home-container {
+  width: 100%;
+  min-height: 530px;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 60px auto;
+  padding: 30px 0px;
+  justify-content: space-evenly;
+}
+.content h1 {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 900;
+  font-family: sans-serif;
+}
+.content p {
+  font-size: 15px;
+  text-align: center;
+  margin: 3.5rem 0;
+  font-family: "Poppins";
+}
+.searchBar {
+    background: #ffffff;
+    padding: 10px 0px;
+    width: 40%;
+    border-radius: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.searchBar input{
+       width: 100%;
+       padding: 8px 24px;
+       font-size: 16px;
+       outline: none;
+       border: none;
+       font-family: "Poppins";
+       background: transparent;
+}
+
+.searchBar button {
+  background: #7D3DF6;
+  outline: none;
+  border: none;
+  color: #fff;
+  position: absolute;
+  right: 20px;
+  font-size: 17px;
+  padding: 10px 24px;
+  font-family: "Gilroy";
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.content form{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.crypto-table{
+  max-width: 800px;
+  margin: auto;
+  background: linear-gradient(rgba(84,3,255,0.15),rgba(105, 2, 153, 0.15));
+  border-radius: 15px;
+}
+.table-layout{
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 1fr 1fr 1.5fr;
+  padding: 15px 20px;
+  align-items: center;
+  border-bottom: 1px solid #3c3c3c;
+}
+.market-cap{
+  text-align: right;
+}
+
+.table-layout img{
+  width: 35px;
+}
+
+.table-layout h4 {
+    font-size: 16px;
+    font-family: "Gilroy";
+    font-weight: 500;
+} 
+.table-layout:last-child{
+  border: none;
+}
+.table-layout div{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.table-layout .green{
+  color: #00D515;
+  text-align: center;
+}
+.table-layout .red{
+  color: #ff4646;
+  text-align: center;
+}
+
+@media (max-width: 800px){
+  .content h1 {
+    font-size: 8vw;
+    padding: 0 1vw;
+  }
+  .content p {
+    font-size: 15px;
+    margin: 2.5rem 2rem;
+}
+}
+
+@media (max-width: 680px) {
+  .table-layout{
+    grid-template-columns: 0.5fr 3fr 1fr 1fr;
+  }
+  .market-cap{
+    display: none;
+  }
+}
+@media (max-width: 420px){
+  .table-layout div img{
+    width: 20px;
+  }
+  .table-layout{
+    font-size: 12px;
+  }
+} 
+
+
+@media (min-width: 340px) and (max-width: 1200px) {
+  .searchBar {
+    width: 50%;
+  }
+}
+@media (max-width: 520px) {
+  .searchBar {
+    width: 70%;
+    padding: 6px 0px;
+}
+}

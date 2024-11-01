@@ -1,0 +1,74 @@
+.Nav-Container{
+    padding: 1.2rem 5rem;
+    background-color: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.497);
+    font-family: "Poppins";
+}
+.Navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Navbar .logo{
+    width: 10rem;
+}
+.Navbar ul{
+    display: flex;
+}
+.Navbar ul li{
+    margin-left: 1.8rem;
+    list-style: none;
+    font-size: 0.90rem;
+}
+.Select select option{
+    color: #000;
+}
+.Select select{
+    padding: 0.40rem;
+    border-radius: 5px;
+    padding-right: 10px;
+    background: transparent;
+    margin-right: 1rem;
+    border: 1px solid #fff;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+}
+.Select button{
+    padding: 10px 14px;
+    font-size: 0.90rem;
+    background: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+}
+.Select button img{
+    width: 0.70rem;
+    margin-left: 0.40rem;
+}
+
+@media (max-width: 850px){
+    .Nav-Container{
+    padding: 1rem 2.5rem;
+    }
+    .Navbar ul li{
+        margin-left: 1rem;
+    }
+}
+@media (max-width: 700px){
+    .Navbar ul {
+        display: none;
+    }
+    .Select button{
+        padding: 9px 10px;
+}
+}
+@media (max-width: 420px){
+    .Nav-Container {
+        padding: 1rem;
+    }
+    .Navbar .logo {
+        width: 7rem;
+    }
+}
